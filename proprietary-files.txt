@@ -5,7 +5,6 @@
 # violet: violet-user 10-QKQ1.190915.002 V12.5.4.0.QFHCNXM release-keys
 
 # Current blobs with ELF checks disabled:
-# libsns_fastRPC_util, libssc_default_listener, libVDSuperPhotoAPI depend on libsdsprpc and build is unable to resolve its symbols
 # libvidhance have unresolved symbol: __cxa_demangle
 
 # ACDB - from violet
@@ -280,7 +279,7 @@ vendor/lib64/hw/com.qti.chi.override.so|52870d7194191544a8b65a1c341f277c83cd313e
 vendor/lib64/hw/com.qti.chi.override_moorea.so|a6fbeb34b7cb36333fc814b3e6dd17b551402939
 vendor/lib64/libFaceGrade.so|c0cbe46c17f646152d8aa5fac6e8d7f9bbe37a26
 vendor/lib64/libSNPE.so|bdf10f6d7e645d6df02d2fc7b337b71dad5cf636
-vendor/lib64/libVDSuperPhotoAPI.so;DISABLE_CHECKELF|6ab9591dbcf0776037301651fe86253b6c79cd9f
+vendor/lib64/libVDSuperPhotoAPI.so|67be65a0198b125b901e530f068a9b2dfd72dcb1
 vendor/lib64/libXMFD_AgeGender.so|1db22d1fdb244072129b3dda02b276128a980fd2
 vendor/lib64/libarcsoft_beautyshot.so|0eeed3ccded6719bb31e37de8f1cf2aedfa4b6ec
 vendor/lib64/libarcsoft_dualcam_refocus.so|ce5e76ae9e9ecc2467c4c4c33144875443ab6393
@@ -811,8 +810,8 @@ vendor/lib64/android.hardware.sensors@2.0-impl.so|dbe0fc9e1f2b0b8d60b490ec014c6e
 vendor/lib64/libsensorcal.so|963fc6d530c37c992483be9d6194ef41a7d8ada4
 vendor/lib64/libsensorslog.so|0868f92ec18390498f130dcfe51b4ac5038464b4
 vendor/lib64/libsns_device_mode_stub.so|360917a1963b5d3f466fa72b94818d11ba1d5c37
-vendor/lib64/libsns_fastRPC_util.so;DISABLE_CHECKELF|f727a463742bccc9c5208d45555e3dc8ec3c7aa1
-vendor/lib64/libsns_low_lat_stream_stub.so;DISABLE_CHECKELF|3c170e8e78a6691e1015d5204488cfa1cb17530f
+vendor/lib64/libsns_fastRPC_util.so|f727a463742bccc9c5208d45555e3dc8ec3c7aa1
+vendor/lib64/libsns_low_lat_stream_stub.so|3c170e8e78a6691e1015d5204488cfa1cb17530f
 vendor/lib64/libsnsapi.so|460bff4aa922cf4570549b68a9b656f5bf018a3a
 vendor/lib64/libsnsdiaglog.so|33e3a82273890a6661948b526a57b6d52a65d7ac
 vendor/lib64/libssc.so|3abbe4e5a8215bcfbcbdf5d5b57c9ff8671bdbbd

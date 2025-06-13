@@ -58,7 +58,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig vendor/debugfs.config
 TARGET_FORCE_PREBUILT_KERNEL := true
 BOARD_RAMDISK_OFFSET := 0x01000000
-PRODUCT_COPY_FILES += $(DEVICE_PATH)/prebuilt/Image.gz-dtb:kernel
 
 # Platform
 TARGET_BOARD_PLATFORM := sm6150

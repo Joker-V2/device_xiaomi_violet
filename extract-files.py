@@ -59,6 +59,8 @@ blob_fixups: blob_fixups_user_type = {
         .patchelf_version('0_8')
         .remove_needed('libhidlbase.so')
         .binary_regex_replace(b'libhidltransport.so', b'libhidlbase-v32.so\x00'),
+    'vendor/lib64/libdpps.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip

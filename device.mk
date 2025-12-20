@@ -298,10 +298,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay-service.xiaomi_sm6150
-
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default

@@ -4,9 +4,6 @@
 # mojito: mojito-user 12 SKQ1.210908.001 V14.0.9.0.SKGMIXM release-keys
 # violet: violet-user 10-QKQ1.190915.002 V12.5.4.0.QFHCNXM release-keys
 
-# Current blobs with ELF checks disabled:
-# libvidhance have unresolved symbol: __cxa_demangle
-
 # ACDB - from violet
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|9227eef7533d7d0e50f0fb436aea674e9c64a10d
 vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb|2c3ba336fd6a852619892c1627fead53d84ebc25
@@ -304,7 +301,7 @@ vendor/lib64/libmpbase.so|c098657cb1fab8c8e1f2f7fdffd49ec8ec61fb1c
 vendor/lib64/libswregistrationalgo.so|9ecc3da8cf3e6e29cf7bda463375388a9837c05c
 vendor/lib64/libsymphony-cpu.so|321c1211fa27f17bacd6e1db8a32fd455d98b7a3
 vendor/lib64/libsymphonypower.so|9a82a0acc5862f8a141461ee076223c10c558ef5
-vendor/lib64/libvidhance.so;DISABLE_CHECKELF|2262fd755b332f252b113e2541e2147db441986c
+vendor/lib64/libvidhance.so|042baa695787d3173993cd9839bdcf151481a2aa
 vendor/lib64/mibokeh_660_opencl.bin|916e133dd818b1cb0161c1d6bab7c9507e680c1f
 
 # Camera Firmware - from violet

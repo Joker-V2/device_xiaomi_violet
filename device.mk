@@ -249,7 +249,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay-service.xiaomi_sm6150
+    vendor.lineage.livedisplay-service.xiaomi_violet
 
 # Media
 PRODUCT_COPY_FILES += \

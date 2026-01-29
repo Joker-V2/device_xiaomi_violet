@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay-service.xiaomi_sm6150"
+#define LOG_TAG "vendor.lineage.livedisplay-service.xiaomi_violet"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>

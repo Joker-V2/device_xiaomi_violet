@@ -14,17 +14,17 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay-service.xiaomi_sm6150",
-    vintf_fragments: select(soong_config_variable("xiaomiSm6150Vars", "livedisplay_support_anti_flicker"), {
+    name: "vendor.lineage.livedisplay-service.xiaomi_violet",
+    vintf_fragments: select(soong_config_variable("xiaomiVioletVars", "livedisplay_support_anti_flicker"), {
         "true": ["vendor.lineage.livedisplay_IAntiFlicker.xml"],
         default: [],
-    }) + select(soong_config_variable("xiaomiSm6150Vars", "livedisplay_support_sunlight_enhancement"), {
+    }) + select(soong_config_variable("xiaomiVioletVars", "livedisplay_support_sunlight_enhancement"), {
         "true": ["vendor.lineage.livedisplay_ISunlightEnhancement.xml"],
         default: [],
     }) + [
-        "vendor.lineage.livedisplay-service.xiaomi_sm6150.xml",
+        "vendor.lineage.livedisplay-service.xiaomi_violet.xml",
     ],
-    init_rc: ["vendor.lineage.livedisplay-service.xiaomi_sm6150.rc"],
+    init_rc: ["vendor.lineage.livedisplay-service.xiaomi_violet.rc"],
     relative_install_path: "hw",
     srcs: [
         ":vendor.lineage.livedisplay-sdm-pa",
@@ -44,10 +44,10 @@ cc_binary {
     header_libs: [
         "vendor.lineage.livedisplay-sdm-headers",
     ],
-    cflags: select(soong_config_variable("xiaomiSm6150Vars", "livedisplay_support_anti_flicker"), {
+    cflags: select(soong_config_variable("xiaomiVioletVars", "livedisplay_support_anti_flicker"), {
         "true": ["-DSUPPORT_ANTI_FLICKER"],
         default: [],
-    }) + select(soong_config_variable("xiaomiSm6150Vars", "livedisplay_support_sunlight_enhancement"), {
+    }) + select(soong_config_variable("xiaomiVioletVars", "livedisplay_support_sunlight_enhancement"), {
         "true": ["-DSUPPORT_SUNLIGHT_ENHANCEMENT"],
         default: [],
     }),

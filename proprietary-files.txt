@@ -1,5 +1,5 @@
-# These proprietary files are extracted from Redmi Note 12 Pro 4G (codenamed `sweet_k6a`) OS1.0.23.0.THGMIXM, unless pinned
 # NX627J: NX627J-user 11 RKQ1.200826.002 nubia.20201029.204053 release-keys
+# These proprietary files are extracted from Redmi Note 12 Pro 4G (codenamed `sweet_k6a`) OS1.0.23.0.THGMIXM, unless pinned
 # dada: dada-user 16 BP2A.250605.015 OS2.0.217.0.WOCMIXM release-keys
 # mojito: mojito-user 12 SKQ1.210908.001 V14.0.9.0.SKGMIXM release-keys
 # violet: violet-user 10-QKQ1.190915.002 V12.5.4.0.QFHCNXM release-keys
@@ -426,8 +426,8 @@ vendor/lib64/libdpmqmihal.so
 
 # DRM
 vendor/bin/qseecomd
-vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
+vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
@@ -447,8 +447,8 @@ vendor/lib64/libtrustedapploader.so
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
 
 # DRM Widevine L1 - from V12.5.1.0 QFHINXM
 vendor/lib64/liboemcrypto.so|2cee717b25559030a61709e826b4a5dae6043c20
@@ -487,11 +487,11 @@ vendor/firmware/a612_zap.mdt|7910a81b6ed3b4ac9411d1706c023b7b90a2eb85
 vendor/firmware/a630_sqe.fw|6526cbb24d614dd67dc18e3c80d5c4374a0b3f63
 
 # Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib/libC2D2.so
@@ -502,11 +502,11 @@ vendor/lib/libc2d30_bltlib.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/hw/vulkan.adreno.so
 vendor/lib64/libC2D2.so
@@ -556,13 +556,13 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # IMS
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libdiag_system.so
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
@@ -711,8 +711,8 @@ system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625
 system_ext/framework/qcrilhook.jar|f251fd8cf621c66a970597954c257d69b6136eda
 system_ext/framework/qti-telephony-common.jar|0ec7f3f9c70a126388595b969c086c0081bacba4
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|3d8fe8b564f844a2d721f018a3a0e64ebc3c7488
-vendor/bin/adpl|e267176086e515486a992c98f2bc540da6e8c555
 vendor/bin/hw/qcrild|77d0168fbad7db01eec8abd9df25f19c05411eb4
+vendor/bin/adpl|e267176086e515486a992c98f2bc540da6e8c555
 vendor/bin/netmgrd|b8df33d93b08d4c57f718457e9f2f71066e8227d
 vendor/bin/qti|dfee6189c14989429bb3320066fdc4b9edbca2d7
 vendor/bin/rmt_storage|626b20ddd58a5b70905a593b4eaa46d4dc6c1b2a
@@ -770,7 +770,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|5ec80005a20a2ef6
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|663b65448ec8f5972337e1bbdc08ef5d4b08e8fa
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|3ffb7301b6c185b114157c5423de604e5ba93ade
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|75a58827c0b4e06e2ca8163b6a904dab2af3be6a
-vendor/radio/qcril_database/qcril.db|f5d830834cbca2dc5cb90d003e0b395e385483cb
 vendor/radio/qcril_database/upgrade/0_initial.sql|e2dfb672711e09330accb3563634f34f907d31ba
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql|47dc91c45a59a1d5138b4945b2a49f47161baa16
 vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql|b0351c39bb0ab6a328ff4f639343f42817bd4161
@@ -801,6 +800,7 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|93340d59f05cd
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|f6c7e947859f56312e687cba70082ce143821351
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table_127531.sql|3629f96ea40e6c4051da9387d62129c057e5c94b
+vendor/radio/qcril_database/qcril.db|f5d830834cbca2dc5cb90d003e0b395e385483cb
 
 # Sensors - from violet
 vendor/bin/hw/android.hardware.sensors@2.0-service|963eb920c10add12f208bf8c425ef7a917824427
@@ -949,6 +949,7 @@ system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|6669d5ee462c981663b8ac573d84d334e4eed96c
 system_ext/etc/seccomp_policy/wfdservice64.policy|1e331272649395423b11c575892e0bdc9433b820
 system_ext/etc/wfdconfigsink.xml|d718bc1ccb3e6e52a0af7bf4de62445c0b083651
+system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|f2918bbd8e4c691299e840863e8cb502a47bb773
 system_ext/lib64/libmmosal.so|9e67e6fb7e29c9b05bbd6259058c0d8474a290ae
 system_ext/lib64/libmmparser_lite.so|79790cd5679624d728fdba20292946439a0be592
 system_ext/lib64/libmmrtpdecoder.so|8b143c0b004a2f5ab8d7911dd463de0ceea794e7
@@ -961,7 +962,6 @@ system_ext/lib64/libwfddisplayconfig.so|27f5d6e284edf05cc7776e5be010912973000ab9
 system_ext/lib64/libwfdmminterface.so|8d3d493fef797aef2feaab4e09e50250ddf5dc9a
 system_ext/lib64/libwfdmmsink.so|4569ce9941eb5d06db599146ed80b8a32d7cd97f
 system_ext/lib64/libwfdmmsrc_system.so|0cc970954800566baddbf760b153b027940180f5
-system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|f2918bbd8e4c691299e840863e8cb502a47bb773
 system_ext/lib64/libwfdrtsp.so|1ab4fc5b75d25f551df3593d5856e6f7893a4176
 system_ext/lib64/libwfdservice.so|af0e31f17ed997a5d8bad64cdad486be28cb9f07
 system_ext/lib64/libwfdsinksm.so|cc899b719fa11d844c65908d7fdc18600451324d

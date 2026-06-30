@@ -72,6 +72,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 
+TARGET_KERNEL_CLANG_VERSION := r563880c
 TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
 TARGET_KERNEL_CONFIG := vendor/sdmsteppe-perf_defconfig vendor/violet.config
 
